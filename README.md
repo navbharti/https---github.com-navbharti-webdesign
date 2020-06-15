@@ -18,9 +18,9 @@ The duration of this program shall be One Week long and each day 3 Hours.
 
 **Proposed Date**: From 15.06.2020 to 20.06.2020
 
-**Time**: 9:30 AM to 12:30 PM
+**Time**: 01:30 PM to 03:30 PM
 
-**Day One**:
+**Day One**:(15.06.2020 from 01:30 PM to 03:30 PM)
 *	Understanding of Internet and World Wide Web
 *	Introduction Web Browser
 *	Basics of website development 
