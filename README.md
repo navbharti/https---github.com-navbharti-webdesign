@@ -20,7 +20,7 @@ The duration of this program shall be One Week long and each day 3 Hours.
 
 **Time**: 01:30 PM to 03:30 PM
 
-**Day One**:(15.06.2020 from 01:30 PM to 03:30 PM)
+**Day One**: [Presentation](https://github.com/navbharti/https---github.com-navbharti-webdesign/blob/master/html/ppt/day%20one.pptx)
 *	Understanding of Internet and World Wide Web
 *	Introduction Web Browser
 *	Basics of website development 
@@ -28,7 +28,7 @@ The duration of this program shall be One Week long and each day 3 Hours.
 *	Introduction to HTML
 *	Creating a simple HTML page
 
-**Day Two**:
+**Day Two**: [Presentation](https://github.com/navbharti/https---github.com-navbharti-webdesign/blob/master/html/ppt/day%20two.pptx)
 *	HTML Documents
 *	Basic structure of an HTML document
 *	Creating HTML document 
@@ -36,12 +36,12 @@ The duration of this program shall be One Week long and each day 3 Hours.
 *	Line Breaks
 *	HTML Tags
 
-**Day Three**:
+**Day Three**: [Presentation](https://github.com/navbharti/https---github.com-navbharti-webdesign/blob/master/html/ppt/day%20three.pptx)
 *	Working with Text
 *	Working with Lists, Tables
 *	Working with Hyperlinks, Images
 
-**Day Four**:
+**Day Four**: [Presentation](https://github.com/navbharti/https---github.com-navbharti-webdesign/blob/master/html/ppt/day%20four.pptx)
 *	Concept of CSS
 *	Creating Stylesheet
 *	CSS Properties
