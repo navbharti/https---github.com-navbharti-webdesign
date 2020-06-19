@@ -63,3 +63,6 @@ The duration of this program shall be One Week long and each day 3 Hours.
 *	Drag & Drop
 *	Understating structure of Website Templet
 
+## Test Yourself with Exercise:
+* CSS Selectors:[[Exercise 1](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors1) [Exercise 2](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors2) [Exercise 3](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors3) [Exercise 4](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors4)]
+* CSS How to...:[[Exercise 1](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto1) [Exercise 2](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto2) [Exercise 3](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto3) [Exercise 4](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto4)] 
