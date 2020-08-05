@@ -1,0 +1,125 @@
+<!DOCTYPE html>  
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>HTML5 Title</title> 
+      <style>
+          header h1{
+              position:absolute;
+              border: 1px solid blue;
+              background-color:red;
+          }
+
+          div {
+                        width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+            }
+
+        @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+        }
+      </style>
+   </head> 
+  
+   <body> 
+      <header role = "banner"> 
+         <h1>HTML5 Document Structure Example</h1> 
+         <p>This page should be tried in safari, chrome or Mozila.</p> 
+      </header> 
+   
+      <nav> 
+         <ul> 
+            <li><a href = "https://www.tutorialspoint.com/html">HTML Tutorial</a></li> 
+            <li><a href = "https://www.tutorialspoint.com/css">CSS Tutorial</a></li> 
+            <li><a href = "https://www.tutorialspoint.com/javascript">
+            JavaScript Tutorial</a></li> 
+         </ul> 
+      </nav> 
+   
+      <article> 
+         <section> 
+            <p>Once article can have multiple sections</p>
+            
+            <form action = "http://example.com/cgiscript.pl" method = "post">  
+   <p> 
+      <label for = "firstname">first name: </label> 
+      <input type = "text" id = "firstname"><br /> 
+   
+      <label for = "lastname">last name: </label> 
+      <input type = "text" id = "lastname"><br /> 
+   
+      <label for = "email">email: </label> 
+      <input type = "text" id = "email"><br> 
+   
+      <input type = "radio" name = "sex" value = "male"> Male<br> 
+      <input type = "radio" name = "sex" value = "female"> Female<br> 
+      <input type = "submit" value = "send"> <input type = "reset"> 
+   </p> 
+</form>
+
+        <math xmlns = "http://www.w3.org/1998/Math/MathML">
+        		
+                 <mrow>
+                    <msup><mi>a</mi><mn>2</mn></msup>
+                    <mo>+</mo>
+        				
+                    <msup><mi>b</mi><mn>2</mn></msup>
+                    <mo> = </mo>
+        				
+                    <msup><mi>c</mi><mn>2</mn></msup>
+                 </mrow>
+        			
+              </math>
+         </section> 
+
+         <section>
+            <math xmlns = "http://www.w3.org/1998/Math/MathML">
+		
+                <mrow>
+                   <mi>A</mi>
+                   <mo>=</mo>
+                   
+                   <mfenced open = "{" close="}">
+                   
+                      <mtable>
+                         <mtr>
+                            <mtd><mi>x</mi></mtd>
+                            <mtd><mi>y</mi></mtd>
+                         </mtr>
+                           
+                         <mtr>
+                            <mtd><mi>z</mi></mtd>
+                            <mtd><mi>w</mi></mtd>
+                         </mtr>
+                      </mtable>
+                      
+                   </mfenced>
+                </mrow>
+             </math>
+
+         </section>
+
+         <section>
+
+            <div>
+
+                This is my div
+            </div>
+         </section>
+      </article> 
+   
+      <aside> 
+         <p>This is  aside part of the web page</p> 
+      </aside> 
+   
+      <footer> 
+         <p>Created by <a href = "https://tutorialspoint.com/">Tutorials Point</a></p> 
+      </footer> 
+   
+   </body> 
+</html>

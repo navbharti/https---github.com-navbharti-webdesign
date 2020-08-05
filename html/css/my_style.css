@@ -1,0 +1,56 @@
+
+/* This CSS code is applied on Selector p */
+    p{
+        color: red;
+        background-color: green;
+    }  
+/* this CSS code is for Selector body */
+    body{
+        background-color: blue;
+    }
+/* This is the universal Selector */
+*{
+    color: maroon;
+}
+/*This is group of selectors as h1, h2, and h3 */
+h1{
+    background-color:olive;
+}
+
+h2{
+    background-color: mediumvioletred;
+}
+
+h3{
+    background-color: rgb(57, 221, 166);
+}
+
+p b i{
+    color: orangered;
+}
+
+.abc{
+
+    color: seashell;
+    background-color: green;
+}
+
+p.abc{
+    background-color: black;
+}
+
+#xyz{
+    font-size: 28pt;
+}
+
+h1#naveen{
+    font-size: 50pt;
+}
+
+table > tr{
+    background-color: red;
+}
+
+a[href]{
+    color: seagreen;
+}

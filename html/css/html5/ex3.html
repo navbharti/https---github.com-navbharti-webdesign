@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>This is HTML5 Title Page</title> 
+      <style>
+        #svgelem {
+           position: relative;
+           left: 50%;
+           -webkit-transform: translateX(-20%);
+           -ms-transform: translateX(-20%);
+           transform: translateX(-20%);
+        }
+     </style>
+   </head> 
+  
+   <body> 
+     <header role = "banner"> 
+         <h1>HTML5 Document Structure Example</h1> 
+         <p>This page should be tried in safari, chrome or Mozila.</p> 
+   </header>
+   
+      <nav> 
+         <ul> 
+            <li><a href = "https://www.tutorialspoint.com/html">HTML Tutorial</a></li> 
+            <li><a href = "https://www.tutorialspoint.com/css">CSS Tutorial</a></li> 
+            <li><a href = "https://www.tutorialspoint.com/javascript">
+            JavaScript Tutorial</a></li> 
+         </ul> 
+      </nav> 
+   <article> 
+         <section> 
+            <p>Once article can have multiple sections</p>
+         </section> 
+    </article> 
+
+      <aside> 
+         <p>This is  aside part of the web page</p> 
+      </aside>
+      
+      <h2 align = "center">HTML5 SVG Circle</h2>
+		
+      <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg" >
+         <circle id = "redcircle" cx = "50" cy = "50" r = "50" fill = "red"  />
+      </svg>
+     
+      <video  width = "300" height = "200" controls autoplay>
+       <!--  <source src = "diagramdemo.mov" type ="video/mov" /> --> 
+     <!--<source src = "/html5/foo.mp4" type = "video/mp4" />-->   
+        Your browser does not support the <video> element.
+     </video>
+
+     <audio controls autoplay>
+        <source src = "tum_hin_ho.mp3" type = "audio/mp3" />
+        Your browser does not support the <audio> element.
+     </audio>
+      <footer> 
+         <p>Created Dr. Naveen Kumar <a href = "https://github.com/navbharti">GitHub</a></p> 
+      </footer> 
+   
+   </body> 
+</html>
