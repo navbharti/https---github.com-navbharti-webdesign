@@ -1,0 +1,67 @@
+========================================================
+Copy of Practice Files and Exceptions_exercise
+========================================================
+1)Define a function called largest which takes a single argument.
+The argument passed will be an opened file object.
+Read the data in the file. Assume that the data is separated by spaces and are all numbers
+Return the maximum value in the file.
+Do not use loadtxt!
+->
+def largest(f):
+  res =-1e20
+  for line in f:
+    for field in line.split():
+      res = max(res,float(field))
+  return res
+
+2)Write a function read_file which will not take any argument.
+Read the pendulum.txt file.
+Copy the second column alone to another file called col2.txt
+Remember to add a newline.
+->
+f = open('pendulum.txt')
+out = open('col2.tx','w')
+for line in f:
+  fields =  line.split()
+  out.write(fields[1] + '\n')
+f.close()
+out.close()
+3) Write a function called my_sum. The function is passed a single string with terms separated by spaces.
+The string contains both names and integer values in arbitrary order.
+Find the sum of all the numbers in the string.
+For example:
+->
+def my_sum(s):
+  total = 0
+  for word in s.split():
+    try:
+      total += int(word)
+    except ValueError:
+      pass
+  return total
+4) Write a function called safe_run(f, x)
+f is a function and x is a value
+f can raise either ValueError or TypeError
+Your function should return OK if no exception is raised.
+Return ValueError if ValueError is raised.
+Return TypeError if TypeError is raised.
+->
+def safe_run(f,x):
+  try:
+    f(x)
+  except ValueError:
+    return 'ValueError'
+  except TypeError:
+    return 'TypeError'
+  else:
+    return 'OK'
+5) Write a function func which takes a single integer argument x
+If x is not a positive integer raise a ValueError.
+If x is not an integer type raise a TypeError.
+Note:- You don't need to print or return anything.
+->
+def func(x):
+  if x is not int:
+     raise ValueError()
+  if x < 0:
+  	raise ValueError()

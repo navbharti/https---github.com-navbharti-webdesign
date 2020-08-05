@@ -1,0 +1,149 @@
+COPY OF PRACTICE BASICS_EXERCISE
+------------------------------------------------------------------------------
+1)Take  a name from user as input:
+
+Solution:
+name=input()
+print(name.upper())
+
+2)Write a python script which will -
+Take a Filename from the user as input
+Add an extension '.txt' to the input filename and print the following output - filename.txt
+
+Solution:
+name=input()
+print(name+'.txt')
+
+3)Write a python script which will -
+Take a string from the user as input
+Print the following -
+print the string without the first character
+print the string without the last character
+print the string in reverse
+print every alternate character of the string starting from the first.
+
+Solution:
+name=input()
+print(name[1:])
+print(name[:-1])
+print(name[::-1])
+print(name[::2])
+
+4)Write a python script which will -
+Take a string from the user as input
+Print the number of vowels in the input string.
+
+Solution:
+x=input()
+x=x.lower()
+n=(x.count('a')+x.count('e')+
+x.count('i')+x.count('o')+x.count('u'))
+print(n)
+
+
+5)Write a python script which will -
+Take a string from the user as input
+Check if the input string has substring abc or def in it.
+If it does, print True, else print False
+
+Solution:
+x=input().lower()
+print('abc' in x or 'def' in x)
+
+
+6)Write a python script which will -
+Take a Two digit integer from the user as input
+Individually print the digits of this number.
+
+
+Solution:
+x=int(input())
+a=x//10
+b=x%10
+print(a)
+print(b)
+
+
+7)Write a python script to accept a name (use an empty prompt) and then print the string "hello NAME"
+
+For Example;
+Input:
+Batman
+Output:
+hello Batman
+
+Solution:
+name=input()
+print("hello",name)
+
+
+8)Write a python script to accept a name but also give them a prompt:
+"Please enter your name: " and then print the string "hello NAME"
+
+Solution:
+name=input("Please enter your name:")
+print("hello",name)
+
+9)Write a script that accepts a single integer as input and provides the square of the integer as output.
+
+For Example;
+Input:
+4
+Output:
+16
+
+Solution:
+x_str=input()
+x=int(x_str)
+print(x*x)
+
+10)Write a script that:
+Accepts a single integer as input (Use an empty prompt)
+Squares this integer
+
+Solution:
+x_str=input()
+x=int(x_str)
+y_str=str(x*x)
+print(len(y_str))
+
+11)Write a python script to accept a single complex number as input.
+The script output should;
+Print the coefficient values of the complex number
+Print the absolute value of this complex number
+Print the conjugate of this complex number
+
+Solution:
+z_str=input()
+z=complex(z_str)
+print(z.real,z.img)
+print(abs(z))
+print(z.conjugate())
+
+
+12)Write a script to accept an integer (use an empty prompt) as input.
+The output should print True if the number is odd, otherwise print False
+
+For Example:
+Input:
+4
+Output:
+
+Solution:
+x_str=input()
+x=int(x_str)
+print(x%2==1)
+
+13)Write a script that accepts an integer (use an empty prompt) as input.
+The output should print True if the number is even, otherwise it should print False
+
+For Example:
+Input:
+8
+Output:
+True
+
+Solution:
+x_str=input()
+x=int(x_str)
+print(x%2==0)

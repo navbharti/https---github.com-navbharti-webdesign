@@ -1,0 +1,230 @@
+COPY OF PRACTICE CONTROL FLOW_EXERCISE
+-----------------------------------------------------------------
+1)Write a python script which will -
+Take an integer from the user as input
+If the number is positive, print "Positive"
+If the number is negative, say -10 print "Negative of 10"
+If the number is zero, print "Zero"
+Finally, print "Done"
+
+Solution:
+x=int(input())
+if x<0:
+	print("Negative of",abs(x))
+elif x>0:
+	print("Positive")
+else:
+	print("Zero")
+print("Done")
+
+
+2)Write a python script which will -
+Take two integers from the user as input one on each line
+Let these numbers be x and y
+Print -
+"first" if x > y
+"second" if x < y
+"same" if x = y
+
+Solution:
+x=int(input())
+y=int(input())
+if x:y:
+	print("first")
+	highest=x
+elif y>x:
+	print("second")
+	highest=y
+else:
+	print("same")
+	highest=x
+print(highest*highest)
+
+
+3)Write a python script to print the numbers from 1 to 10 using While loop.
+
+Solution:
+x=1
+while x<11:
+	print(x)
+	x+=1
+
+4)Write a python script to print the odd numbers from 1 to 10 using a while loop.
+
+Solution:
+x=1
+while x<11:
+	print(x)
+	x+=2
+
+5)Write a python script to generate the numbers from 1 to 10 using a while loop.
+If a number, divisible by 3 is found, print ***
+If a number, divisible by 5 is found, print *****
+If a number is not divisible by either 3 or 5 , print the number
+
+Hence, the output should be:
+1
+2
+***
+4
+*****
+***
+7
+8
+***
+*****
+
+Solution:
+x=1
+while x<11:
+	if x%3==0:
+		print('***')
+	elif x%5==0:
+		print('*****')
+	else:
+		print(x)
+	x+=1
+
+6)Write a python script to generate the numbers from 10 to 1 using a while loop. For each number in the iteration, print that many *.
+So the output should be,
+The expected output is - 
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+Solution:
+x=10
+while x>0:
+	print('*'*x)
+	x=-1
+
+7)Write a python script which will take an integer n from the user as input, where n >= 2
+Use a while loop to print n numbers uniformly spaced between 0 and 1. Include 0 and 1 while printing.
+
+Solution:
+n=int(input())
+dx=1.0/(n-1)
+x=0.0
+while x<(1.0-dx/2):
+	print(x)
+	x+=dx
+print(1.0)
+
+8)Write a python script which will -
+Take an integer from the user as input
+Print the multiplication table of that integer till 10
+
+Solution:
+n=int(input())
+for i in range(1,11):
+	print(n,'x',i,'=',n*i)
+
+9)Write a python script that accepts an integer n as input (where n >= 1)
+The script should print the first n numbers of the fibonacci sequence
+
+Solution:
+n=int(input())
+a,b=0,1
+print(a)
+for i in range(n-1):
+	print(b)
+	a,b=b,a+b
+
+10)Write a python script that will;
+Accept an integer n
+Create a list containing integers from 1 to n Output must print each value of the list in a separate line For
+
+Solution:
+n=int(input())
+for x in range(1,n+1):
+	print(x)
+
+11)Write a Python script that accepts an integer n as input. Use numpy’s linspace to create n points from 1 to 2
+The script must print each value from the array in a separate line.
+
+For Example;
+Input
+3
+Output:
+1.0
+1.5
+2.0
+
+
+Solution:
+from numpy import linspace
+n=int(input())
+data=linspace(1,2,n)
+for x in data:
+	print(x)
+
+12)Write a python script that accepts a list of fruits separated by a comma
+The script must print each fruit in a separate line
+
+For example:
+Input:
+apple,pear,banana
+
+Output:
+apple
+pear
+banana
+
+
+Solution:
+fruits=input()
+fruits=fruits.split(',')
+for fruit in fruits:
+	print(fruit)
+
+13)Write a python script that accepts a string as input
+The script must print each character of the string using a for loop. For example;
+Input:
+box
+Output
+b
+o
+x
+
+
+Solution:
+s=input()
+for char in s:
+	print(char)
+
+14)Write a python script that accepts an integer nas user input (with empty prompt)
+The script must print an n x n matrix where each entry is the sum of the row number and column number For example;
+Input:
+3
+Output:
+0 1 2
+1 2 3
+2 3 4
+
+Solution:
+n=int(input())
+for i in range(n):
+	for j in range(n):
+		print(i+j,end=' ')
+	print()
+
+15)Find the first number in the Fibonacci sequence that is divisible by 4 but more than 8 and less than 500.
+
+Solution:
+a,b=0,1
+while b<500:
+	if b%4==0 and b>8:
+		print(b)
+		break
+	a,b=b,a+b
+
+
+
+

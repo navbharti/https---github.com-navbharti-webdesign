@@ -1,0 +1,100 @@
+=============================================
+Copy of Copy of Practice functions_exercise
+=============================================
+1) Define a function called prompt
+The function should ask the user to enter their name (no prompt)
+The function should not take any arguments.
+The function should not return anything.
+The function should print Hello
+->
+# Call function prompt() on the last line of the code
+def prompt():
+  name = input()
+  print('Hello',name)
+prompt()
+2) Define a function called prompt
+The function should take a single string argument
+The function should return a string with 'Hello'
+-> 
+def prompt(name):
+  s = 'Hello ' + name
+  return s
+3) Define a function called add
+The function should take two arguments.
+The function should return the sum of the two arguments.
+->
+def add(a,b):
+  return a + b
+4) Define a function called is_even
+The function should take a single integer argument.
+The function should return True if the number is even and False otherwise.
+->
+def is_even(num):
+	if(num%2==0): 
+    	 return True 
+	else:
+         return False
+5) Define a function called even_square
+The function should take a single argument.
+The function should return if the number is even and the square of the number
+->
+def even_square(num):
+	if(num%2==0): 
+    	 return True,num*num
+	else:
+         return False,num*num
+6) Define a function called greet
+The function should take one positional argument, name.
+The function should take one optional argument, message.
+If message is not given, it should default to 'Hello'.
+It should return the string with the greeting
+->
+def greet(name,message='Hello'):
+  return message+' '+name
+7) Define a function called to_lower
+The function should take a single list of strings.
+The function should return the list of strings but all in lowercase.
+Do not use input
+->
+def to_lower(data):
+  result = []
+  for x in data:
+    result.append(x.lower())
+  return result
+8) Define a function called fib taking one argument n
+Where, n>0 is an integer but defaults to 8
+Return the first n terms of the Fibonacci sequence
+->
+def fib(n=8):
+  a, b=0,1
+  result=[0]
+  for i in range(n-1):
+    result.append(b)
+    a,b=b,a+b
+  return result
+9) Define a function called power2() which takes no argument.
+It should return a function which takes a single argument x but returns {2^x}.
+->
+def power2(n=2):
+  def f(x):
+    
+ 	 return n ** x
+  return f
+10) Define a function called apply(f, data)
+Where f is a function taking a single value.
+Where data is a list.
+It should return a list where the function is applied to each element of data.
+->
+def  apply(f, data):
+  result =[]
+  for x in data:
+    result.append(f(x))
+  return result
+11) Define a function called prompt
+The function should ask the user to enter their name (no prompt)
+The function should take only one argument.
+The function should not return anything.
+The function should print "Hello" and the argument.
+->
+def prompt(name):
+  print ('Hello',name)

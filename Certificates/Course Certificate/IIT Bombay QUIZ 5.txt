@@ -1,0 +1,90 @@
+QUIZ-5
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)Write a Python script which will accept a string (the string can be Upper case or Lower case) as a user input (Please do not add any prompt while taking input)
+Print the reverse of the string in lower 
+
+Solution:
+text = input()
+str1=text.lower()
+print(str1[::-1])
+
+2) Write a Python Script which accepts an integer start value and an integer end values (separated by a space, for example: 4 8 represents 4, 5, 6, 7, 8) as user input (Please do not add any prompt while taking input).
+
+Solution:
+start,end = map(int,input().split())
+for i in range(start,end+1):
+    print(i,end=', ')
+
+3) Find all such numbers which are divisible by 7 but are not a multiple of 5 between start and end values.
+Print the list of numbers (separated by spaces) including the start and end values.
+
+Solution:
+start,end = map(int,input().split())
+list = [i for i in range(start,end+1) if i%7 == 0 and i%5!=0]
+for i in list:
+    print(i,end=', ')
+
+
+4) Write a python script which will accept an integer as user input (Please do not add any prompt while taking input).
+If the number is even print Even
+If the number is odd print Odd.
+
+Solution:
+no = int(input())
+if no % 2 == 0:
+    print("Even")
+else:
+     print("Odd")
+5) You are given date strings of the form “29 Jul, 2009”, or “4 Jan 2008”.
+In other words a number, a string and another number, with a comma sometimes separating the items.
+Write a Python Script that takes such a string as input and prints a tuple (yyyy, mm, dd) where all three elements are ints.
+
+Example
+Input
+29 Jan, 2008
+
+Output
+(2008, 1, 29)
+
+Solution:
+m=input()
+m=m.replace(',',' ')
+dt,mt,y=m.split()
+mon={'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,'Jul':7,'Aug':8,'Sep':9,
+'Oct':10,'Nov':11,'Dec':12}
+mt=mt.capitalize()
+t=(int(y),mon[mt],int(dt))
+print(t)
+
+6) Write a Python Script that takes a string from the user (with empty prompt).
+Convert this string into a list of characters.
+Sort this list in ascending order.
+Now eliminate any repeated values in this list.
+
+
+Solution:
+def split(word): 
+    return [char for char in word]  
+word = input()
+s = split(word)
+s.sort()
+
+print(s)
+
+7) Print Sum of even numbers and Product of odd numbers
+Write a Python script which accept sequence of numbers (separated by spaces) as user input (Please do not add any prompt while taking input)
+Print the sum of odd numbers in the sequence and print the product of even numbers in the sequence
+
+
+Solution
+input_string = input()
+userList = input_string.split()
+even_total = 1
+odd_total = 0
+for number in userList:
+    if(int(number) % 2 == 0):
+        even_total = even_total * int(number)
+    else:
+        odd_total = odd_total + int(number)
+print(odd_total,end=' ')
+print(even_total,end='')

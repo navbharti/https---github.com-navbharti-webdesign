@@ -1,0 +1,208 @@
+1) Define a function called largest which takes a single argument.
+The argument passed will be an opened file object.
+Read the data in the file. Assume that the data is separated by spaces and are all numbers
+Return the maximum value in the file.
+Do not use loadtxt!
+->
+def largest(f):
+   res =-1e20
+   for line in f:
+    for field in line.split():
+      res = max(res,float(field))
+   return res
+2) Write a function func which takes a single integer argument x
+If x is not a positive integer raise a ValueError.
+If x is not an integer type raise a TypeError.
+Note:- You don't need to print or return anything.
+->
+ def func(x):
+   if x is not int:
+      raise ValueError()
+   if x < 0:
+   	raise ValueError()
+3) Write a function odd_even_sum(start, stop) that accepts two integer arguments.
+
+The function must return a list containing two values. The first value of the list will be the sum of all the odd values between (and including) start and stop. The second value of the list will be the sum of all the even values between (and including) start and stop.
+
+For Example: (Note: The values between 2 and 7 will be 2,3,4,5,6,7)
+>>> odd_even_sum(2, 7)
+>>> (15, 12)
+->
+def odd_even_sum(start,stop):
+    list1=[]
+    e=0
+    o=0
+    for x in range(start,stop+1):
+        if x%2==0:
+            e=e+x
+        else:
+            o=o+x
+    list1.append(o)
+    list1.append(e)
+    return tuple(i for i in list1)
+print(odd_even_sum(2,7))
+
+4) Write a function fibodiv(n) that accepts an integer n as argument.
+
+The function should return boolean True if the nth value of the fibonacci sequence is divisible by 4 otherwise return boolean value False.
+
+A fibonacci sequence, (always starting from 1) is 1, 1, 2, 3, 5, 8 ...
+
+For Example
+fibodiv(6) should return True {since the 6th term of the fibonacci sequence is 8}
+
+Write your program below:
+->
+def fibodiv(nterms):
+    list1=[]
+    n1, n2 = 0, 1
+    count = 0
+    while count < nterms+1:
+            list1.append(n1)
+            nth = n1 + n2
+       # update values
+            n1 = n2
+            n2 = nth
+            count += 1
+    if list1[nterms]%4==0:
+        return "True"
+5) Write a function read_file which will not take any argument.
+Read the pendulum.txt file.
+Copy the second column alone to another file called col2.txt
+Remember to add a newline.
+Files to download for this question
+col2.txt
+pendulum.txt
+
+Write your program below:
+->
+def read_file():
+    file1=open('pendulum.text')
+    store=open('col2.txt','w')
+    for x in file:
+        store1=x.split()
+        store=store+store1[1]+'\n'
+6) Write a python script which will -
+Take a string from the user as input
+Print the number of vowels in the input string.
+
+For example :-
+
+For given input string -
+aeiou
+
+The output should be - 
+ 5 
+
+For given input string -
+AaEeIiOoUu
+
+The output should be - 
+ 10 
+Note :-
+
+While using the input function, please use an empty prompt.
+
+The script should be case-insensitive
+
+
+
+Write your program below:
+->
+str1=input()
+str1=str1.lower()
+len1=len(str1)
+c=0
+for i in range(0,len1):
+    if str1[i]=='a' or str1[i]=='e' or str1[i]=='i' or str1[i]=='o' or str1[i]=='u' :
+        c+=1
+    else:
+        pass
+print(c)
+
+7) Write a function called safe_run(f, x)
+f is a function and x is a value
+f can raise either ValueError or TypeError
+Your function should return OK if no exception is raised.
+Return ValueError if ValueError is raised.
+Return TypeError if TypeError is raised.
+For example:
+>>> safe_run(float, 'A')
+'ValueError'
+>>> def f(x): return x + 2
+>>> safe_run(f, '2')
+'TypeError'
+>>> safe_run(float, '2')
+'OK'
+->
+def safe_run(f,x):
+    k=0
+    try:
+        f(x)
+    except ValueError:
+        return "ValueError"
+    except TypeError:
+        return "TypeError"
+    else:
+        return "OK"
+safe_run('f','A')
+safe_run(float,'2')
+safe_run(float,2)
+
+8) Write a function called my_sum. The function is passed a single string with terms separated by spaces.
+The string contains both names and integer values in arbitrary order.
+Find the sum of all the numbers in the string.
+For example:
+>>> my_sum('1 fox, 2 dogs and 3 jackals')
+6
+>>> my_sum('3 blind mice and 1 man')
+4
+->
+def my_sum(str1):
+    t=0
+    for word in str1.split():
+        try:
+            t+=int(word)
+        except ValueError:
+            pass
+    return t
+my_sum("1 3 4 5 drt")
+9) Write a function called count_unique(text) to find the number of unique words in a given string. Ignore case and assume no punctuation is in the words. For example:
+
+>>> count_unique('a banana He hE he')
+3
+>>> count_unique('ha ha ha')
+1
+->
+def count_unique(text):
+  
+  text.lower()
+  lsit1 = list(text)
+  unique = set(list1) 
+  print(len(unique)) # is 2
+10) Write a function cat_dog_count(arg) which accepts one string argument. The argument will be a string containing multiple words that are separated by spaces. (all words will be in lower cases)
+The function should return a boolean value True if the words "cat" and "dog" appear the same number of times in the string otherwise it should return False
+
+For Example:
+>>> cat_dog_count( "ca dog cat do d trip flip cat" )
+>>> False
+
+>>> cat_dog_count( "dog dog cat cat drip flip come go")
+>>> True
+->
+def cat_dog_count(arg):
+    arg=arg.lower()
+    c=0
+    d=0
+    for x in arg.split():
+        if x=='cat':
+            c+=1
+        if x=='dog':
+            d+=1
+    if d==c:
+        return True
+    else:
+        return False
+str1=input()
+
+print(cat_dog_count(str1))
